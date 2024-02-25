@@ -21,10 +21,20 @@ public class StockExchange {
             c[i] = new Company("GOAT_" + i);
         }
 
+        /**
+         * Changing stock rice for some companies
+         */
+        for (int i = 2 * N ; i < 3 * N; i++) {
+            c[i].changeStockPrice(i * 1.25 * N);
+        }
+
+        /**
+         * letting companies get insolvent
+         */
         for (int i = 0; i < 2 * N; i++) {
-            System.out.println(c[i].getName());
             c[i] = null;
         }
+
 
         //Calling garbage collector to see the destuctor message
         System.gc();

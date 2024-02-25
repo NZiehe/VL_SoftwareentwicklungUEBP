@@ -21,7 +21,7 @@ public class Ticker {
     /**
      * String to separate the message with.
      */
-    public static final String MESSAGE_SEP = "+++";
+    public static final String MESSAGE_SEP = "  +++  ";
 
     private Ticker(){};    
     
