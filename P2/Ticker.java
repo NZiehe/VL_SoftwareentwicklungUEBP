@@ -1,5 +1,9 @@
 /**
  * Ticker
+ * Singleton class representing a ticker, witch prints every String it gets by the {@link #print(String)} method on the same line,
+ * seperated by {@value #MESSAGE_SEP}.
+ * 
+ * @author Nico Ziehe
  */
 public class Ticker {
 
@@ -35,7 +39,7 @@ public class Ticker {
 
     /**
      * Prints the given text on one line, replacing line seperators by space and seperates it with 
-     * (@value #MESSAGE_SEP) from the already printed information.
+     * {@value #MESSAGE_SEP} from the already printed information.
      * @param text The text that should be printed
      */
     public void print(String text){
